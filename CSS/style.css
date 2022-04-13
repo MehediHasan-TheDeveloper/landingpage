@@ -1,0 +1,292 @@
+/* Author:Mehedi Hasan */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+nav{
+    display: flex;
+    background-color: gray;
+}
+nav ul li{
+    /* display: flex; */
+    padding:5px 20px;
+    justify-content: center;
+    list-style: none;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li form{
+   margin-left:60px;
+    /* padding: 10px 10px 10px 50px; */
+}
+nav ul li form input{
+    height: 40px ;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+nav ul li .Github i{
+    font-size: 50px;
+    color: white;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover
+{
+    text-decoration: none;
+    color: whitesmoke;
+}
+nav ul li a:active{
+    text-decoration: none;
+    color: whitesmoke;
+}
+nav ul li button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+}
+nav ul li  i{
+    font-size: 10px;
+    color: white;
+}
+.dropdown{
+    display: none;
+}
+nav ul li:hover .dropdown{
+    display: block;
+    flex-direction: column;
+    position: relative;
+}
+nav ul li:hover .dropdown ul{
+    display: block;
+    position: absolute;
+    background-color: whitesmoke;
+    margin-top: 20px;
+    /* color: black; */
+}
+.dropdown ul li{
+    display: block;  
+}
+nav ul{
+    margin-bottom: 0;
+}
+.dropdown ul li a{
+    color: black;
+}
+.banner{
+    background: url(https://github.githubassets.com/images/modules/site/social-cards/github-social.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 400px; */
+    background-size:cover;
+}
+.banner_overlay{
+    padding: 200px 0;
+    margin-top: 0px;
+}
+.banner_content h1{
+    color: aliceblue; 
+    font-family: monospace;
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+.banner_content h2{
+    color: blanchedalmond;
+    font-family: cursive,serif,Georgia,BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    padding: 10px 50px;
+  
+}
+.sign{
+    display: inline-flex;
+}
+/* .sign input{
+    height: 50px ;
+    padding-left: 15px;
+    width: 300px;
+    margin: 20px 30px;
+    border-radius: 20px;
+    border: none;
+    display: block;
+} */
+.sign button{
+    padding: 20px 20px;
+    margin: 10px 50px;
+    background-color: honeydew;
+    color: darkslategray;
+    display: block;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+}
+button:hover{
+    color: forestgreen;
+    background-color: cornsilk;
+}
+.about_heading h4{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    background-color: dimgrey;
+    color: aliceblue;
+    border-radius: 20px;
+    padding:5px 0;
+    /* margin: 10px 10px; */
+}
+.about_image{
+    width: 50%;
+    float: left;
+}
+.about_image img{
+    width: 100%;
+}
+.about_content{
+    width: 48%;
+    float: left;
+    text-align: center;
+    margin-left: 2%;
+}
+.about_content h3{
+    width: 100%;
+    font-family: monospace;
+    padding: 10px 5px;
+    font-weight: 20px;
+}
+.about_content p{
+    width: 100%;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contacr_heading{
+    text-align: center;
+    background-color: cornflowerblue;
+    color: azure;
+    border-radius: 20px;
+    padding: 5px 10px;
+    /* width: 80%; */
+    margin: 20px 100px;
+}
+.gallery_img{
+    width: 32%;
+    float: left;
+    position: relative;
+    
+}
+.gallery_img img{
+    width: 100%;
+    height:250px;
+    position: relative;
+}
+.gallery_overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+.gallery_overlay a{
+    color: #3b5998;
+    border-radius: 50%;
+    font-size: 100px;
+
+}
+.gallery_overlay2 li{
+    list-style: none;
+}
+.gallery_overlay1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.gallery_overlay1 a{
+    color: #00acee;
+    border-radius: 50%;
+    font-size: 100px;
+} 
+.gallery_overlay2{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+.gallery_overlay2 a{
+    color:#7289d9;
+    border-radius: 50%;
+    font-size: 100px;
+}
+.gallery_img:hover .gallery_overlay{
+    background-color:cornsilk;
+    transition: all linear 1s;
+}
+.gallery_img:hover .gallery_overlay1{
+    background-color:cornsilk;
+    transition: all linear 1s;
+}
+.gallery_img:hover .gallery_overlay2{
+    background-color:cornsilk;
+    transition: all linear 1s;
+}
+.gallery_overlay li{
+    list-style: none;
+}
+.gallery_overlay1 li{
+    list-style: none;
+}
+.gallery_middle{
+    margin-right: 2%;
+}
+.contacr_heading a{
+    text-decoration: none;
+    color: bisque;
+}
+.contacr_heading:hover{
+    text-decoration: none;
+    color: palegreen;
+    background-color: black;
+}
+.contacr_heading:hover a{
+    text-decoration: none;
+    color: azure;
+}
+.contacr_heading a:active{
+    text-decoration: none;
+}
+
+nav ul li  i:hover{
+    color: black;
+}
+.about{
+    padding: 50px 40px;
+}
